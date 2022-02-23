@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="ShopGear.Service.ProductServiceImpl"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="ShopGear.Service.BaseService"/>
+<fullyQualifiedTypeName name="ShopGear.Dao.CategoryDao"/>
+<fullyQualifiedTypeName name="ShopGear.Mapper.CategoryMapper"/>
+<fullyQualifiedTypeName name="ShopGear.Service.ICategoryService"/>
+<fullyQualifiedTypeName name="ShopGear.Model.CategoryModel"/>
+<fullyQualifiedTypeName name="ShopGear.Service.IProductService"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<fullyQualifiedTypeName name="ShopGear.Dao.ProductDao"/>
+<fullyQualifiedTypeName name="ShopGear.Model.ProductModel"/>
+<fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="ShopGear.Mapper.ProductMapper"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="ShopGear.Service.IPaginateService"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="ShopGear.Service.PaginateServiceImpl"/>
+<fullyQualifiedTypeName name="ShopGear.Dto.PaginatesDto"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,5 @@
+package ShopGear.Dto;
+
+public class PagiantesDto {
+
+}

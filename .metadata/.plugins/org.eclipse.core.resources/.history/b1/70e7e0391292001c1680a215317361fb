@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+   
+<%@include file="/WEB-INF/views/layouts/user/taglib.jsp" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+ <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="<c:url value="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="<c:url value="/assets/homepage/css/styles.css" />" rel="stylesheet" />
+    <%@include file="/WEB-INF/views/layouts/user/header.jsp" %>
+   <decorator:body></decorator:body>
+    <%@include file="/WEB-INF/views/layouts/user/footer.jsp" %>
+    
+         <!-- Bootstrap core JS-->
+        <script src="<c:url value="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" />"></script>
+        <!-- Core theme JS-->
+        <script src="<c:url value="/assets/home_page/js/scripts.js" />"></script>
+    </body>
+</html>

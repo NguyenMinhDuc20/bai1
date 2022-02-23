@@ -1,0 +1,5 @@
+package ShopGear.Dao;
+
+public class BaseDao {
+
+}

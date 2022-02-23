@@ -1,0 +1,5 @@
+package ShopGear.Service;
+
+public class BaseService {
+
+}

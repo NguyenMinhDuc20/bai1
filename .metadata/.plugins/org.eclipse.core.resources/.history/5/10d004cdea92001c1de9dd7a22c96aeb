@@ -1,0 +1,9 @@
+package ShopGear.Controller.User;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class Common {
+	public ModelAndView _mvShare = new ModelAndView();
+}

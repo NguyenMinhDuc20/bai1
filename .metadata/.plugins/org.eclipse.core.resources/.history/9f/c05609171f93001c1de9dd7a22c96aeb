@@ -1,0 +1,37 @@
+package ShopGear.Controller.User;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+import ShopGear.Model.CategoryModel;
+import ShopGear.Model.ProductModel;
+import ShopGear.Service.ICategoryService;
+
+@Controller
+public class HomeController extends Common{
+	@Autowired
+	ICategoryService _category;
+	@RequestMapping(value= {"/","/trang-chu"})
+	public ModelAndView Index() {
+			_mvShare.addObject("products", _getAllProduct.getAllProduct());
+			_mvShare.addObject("categorys",_category.getAllCategory());
+			_mvShare.setViewName("user/home/index");
+			List<CategoryModel> list=_category.getAllCategory();
+		return _mvShare;
+		
+	}
+//	@RequestMapping(value = { "/", "/trang-chu" })
+//	public ModelAndView Index() {
+//		_mvShare.addObject("slides", _homeService.GetDataSlide());
+//		_mvShare.addObject("categorys", _homeService.GetDataCategorys());
+//		_mvShare.addObject("products", _homeService.GetDataProducts());
+//		_mvShare.setViewName("user/index");
+//		return _mvShare;
+//	}
+
+}

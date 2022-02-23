@@ -1,0 +1,14 @@
+package ShopGear.Dao;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class ProductDao {
+	public StringBuffer sqlGetAllProduct() {
+		StringBuffer sql=new StringBuffer();
+		sql.append("SELECT * FROM product");
+		return sql;
+	}
+	//trả danh sách các product kiểu producmapper
+	
+}

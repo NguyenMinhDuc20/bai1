@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\ducDev2022fighting\Desktop\javaWeb\Shop_Gear\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1568975843.index
+2614963858.index
+4286498662.index
+1676861099.index
+1818201371.index
+3583718689.index

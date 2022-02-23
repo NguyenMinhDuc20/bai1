@@ -1,0 +1,30 @@
+package ShopGear.Service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import ShopGear.Dao.ProductDao;
+import ShopGear.Mapper.ProductMapper;
+import ShopGear.Model.ProductModel;
+@Service
+public class ProductServiceImpl extends BaseService implements IProductService {
+
+	@Autowired
+	ProductDao productDao;
+	//trả danh sách các product kiểu producmapper
+	public List<ProductModel> getAllProduct() {
+		String sql=productDao.sqlHome().toString();
+		List<ProductModel> list=new  ArrayList<ProductModel>();
+		list= _jdbcTemplate.query(sql, new ProductMapper());
+		return list;	
+	}
+	//trả product kiểu producmapper theo id_product
+	public ProductModel getProductById(long id) {
+		ProductModel product =_jdbcTemplate.query(productDao.sqlGetProductById(id).toString(), new ProductModel());
+		return product;
+	}
+
+}

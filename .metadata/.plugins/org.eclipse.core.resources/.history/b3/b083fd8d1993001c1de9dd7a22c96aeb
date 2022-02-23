@@ -1,0 +1,9 @@
+package ShopGear.Service;
+
+import java.util.List;
+
+import ShopGear.Model.CategoryModel;
+
+public interface ICategoryService {
+	public List<CategoryModel> getCategory();
+}

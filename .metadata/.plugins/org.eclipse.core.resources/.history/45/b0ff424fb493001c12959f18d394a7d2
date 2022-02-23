@@ -1,0 +1,51 @@
+package ShopGear.Service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import ShopGear.Dao.ProductDao;
+import ShopGear.Mapper.ProductMapper;
+import ShopGear.Model.ProductModel;
+@Service
+public class ProductServiceImpl extends BaseService implements IProductService {
+
+	@Autowired
+	ProductDao productDao;
+	//trả danh sách các product kiểu ProductModel
+	public List<ProductModel> getAllProduct() {
+		String sql=productDao.sqlHome().toString();
+		List<ProductModel> list=new  ArrayList<ProductModel>();
+		list= _jdbcTemplate.query(sql, new ProductMapper());
+		return list;	
+	}
+	//trả product kiểu producmapper theo id_product
+	public ProductModel getProductById(long id) {
+		String sql=productDao.sqlGetProductById(id).toString();
+		List<ProductModel> list=new  ArrayList<ProductModel>();
+		list= _jdbcTemplate.query(sql, new ProductMapper());
+		return list.get(0);
+	}
+	public List<ProductModel> getProductByCate(int id,boolean related) {
+		// TODO Auto-generated method stub	
+		List<ProductModel> listProduct=new ArrayList<ProductModel>();
+		String sql= productDao.sqlGetProductByIdCate(id,related).toString();
+		listProduct=_jdbcTemplate.query(sql, new ProductMapper());
+		return listProduct;
+	}
+	
+	
+	
+	public List<ProductModel> GetDataProductsPaginate( int start, int totalPage) {
+		List<ProductModel> listProductsByID = _jdbcTemplate.query(productDao.sqlGetAllProduct().toString(), new ProductMapper());
+		List<ProductModel> listProducts = new ArrayList<ProductModel>();
+		if(listProductsByID.size() > 0) {
+			String sql = productDao.SqlProductsPaginate(start, totalPage).toString();
+			listProducts = _jdbcTemplate.query(sql, new ProductMapper());
+		}
+		return listProducts;
+	}
+
+}

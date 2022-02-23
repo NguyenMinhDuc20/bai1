@@ -1,0 +1,15 @@
+INDEX VERSION 1.131
+C:\Users\ducDev2022fighting\Desktop\javaWeb\Shop_Gear\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3877917412.index
+\ShopGear\src\main\java
+C:\Users\ducDev2022fighting\Desktop\javaWeb\Shop_Gear\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\459376765.index
+\ShopGear\src\main\java
+C:\Users\ducDev2022fighting\Desktop\javaWeb\Shop_Gear\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3385266973.index
+\ShopGear\src\main\java
+C:\Users\ducDev2022fighting\Desktop\javaWeb\Shop_Gear\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1990661919.index
+\ShopGear\src\main\java
+C:\Users\ducDev2022fighting\Desktop\javaWeb\Shop_Gear\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1062683035.index
+\ShopGear\src\main\java
+C:\Users\ducDev2022fighting\Desktop\javaWeb\Shop_Gear\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\899785474.index
+\ShopGear\src\main\java
+C:\Users\ducDev2022fighting\Desktop\javaWeb\Shop_Gear\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3826140922.index
+\ShopGear\src\main\java

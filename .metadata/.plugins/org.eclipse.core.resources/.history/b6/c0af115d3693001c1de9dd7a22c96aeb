@@ -1,0 +1,17 @@
+package ShopGear.Controller.User;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class CategoryController extends Common {
+	@RequestMapping(value = { "/category/{id}" })
+	public ModelAndView Category(@PathVariable int id) {
+		_mvShare.addObject("products", _getAllProduct.getProductByCate(id));
+		_mvShare.setViewName("user/home/index");
+		return _mvShare;
+
+	}
+}

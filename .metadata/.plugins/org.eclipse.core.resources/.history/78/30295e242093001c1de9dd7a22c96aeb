@@ -1,0 +1,11 @@
+package ShopGear.Service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import ShopGear.Model.ProductModel;
+@Service
+public interface IProductService {
+	List<ProductModel> getAllProduct();
+}
